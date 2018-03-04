@@ -22,7 +22,7 @@ width: 100%;
 margin: 0;
 text-align: center;
 height: 300px;
-padding-top: 10px;
+padding-top: 15px;
 box-sizing: border-box;
 -webkit-animation: slide 10s linear infinite;
 
@@ -40,13 +40,14 @@ box-sizing: border-box;
 
 <body>
 
-<h2 class="w3-center">The Works of Jellebones</h2>
+<center><img src="JellebonesTitle.png" alt="Jellebones"></center>
 
-<div class="w3-content w3-section" style="max-width:800px">
-  <img class="mySlides" src="Leopard Shark.jpg" style="width:100%">
-  <img class="mySlides" src="Maritime Clique.jpg" style="width:100%">
-  <img class="mySlides" src="Smooth hound.jpg" style="width:100%">
-  <img class="mySlides" src="Neko.jpg" style="width:100%">
+<div class="w3-content w3-section" style="max-width:700px">
+  <img class="w3-animate-zoom" src="Leopard Shark.jpg" style="width:100%">
+  <img class="w3-animate-zoom" src="Maritime Clique.jpg" style="width:100%">
+  <img class="w3-animate-zoom" src="Neko.jpg" style="width:100%">
+  <img class="w3-animate-zoom" src="Smooth hound.jpg" style="width:100%">
+  <img class="w3-animate-zoom" src="Videl 711.jpg" style="width:100%">
 </div>
 
 <script>
@@ -55,7 +56,7 @@ carousel();
 
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("w3-animate-zoom");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
@@ -66,13 +67,10 @@ function carousel() {
 }
 </script>
 
-
 <audio autoplay>
   <source src="small happiness.mp3" type="audio/MPEG">
 Your browser does not support the audio element.
 </audio>
-
-
 
 </body>
 
