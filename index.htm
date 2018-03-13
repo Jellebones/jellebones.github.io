@@ -6,23 +6,37 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 
+#mySidenav a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 0px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+}
+#mySidenav a:hover {
+    left: 0;
+}
+
+#blog {
+    top: 80px;
+    background-color: #FCB0BD;
+}
+
+#contact {
+    top: 160px;
+    background-color: #FCB0BD;
+}
+
 .zoomIn {animation:animatezoom 0.6s}
         @keyframes animatezoom{
         from{transform:scale(0.9)} 
         to{transform:scale(1)}
 }
 
-.sideLinks {
-    height: 100%;
-    width: -100px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    padding-right: 10px;
-    padding-top: 10px;
-
-}
 
 div.bottom {
     margin: auto;
@@ -64,15 +78,16 @@ box-sizing: border-box;
   <img class="zoomIn" src="Neko.jpg" style="width:100%">
   <img class="zoomIn" src="Smooth hound.jpg" style="width:100%">
   <img class="zoomIn" src="Videl 711.jpg" style="width:100%">
+  <img class="zoomIn" src="slimemaid.jpg" style="width:100%">
 </div>
 
-<div class="sideLinks">
-  <a href="https://twitter.com/JelleBones">
-    <img src="TWITTER.png" width="64" height="64";>
-  </a>
+<div id="mySidenav" class="sidenav">
+  <a href="https://twitter.com/JelleBones" id="blog"><img src="TWITTER.png" width="64" height="64";></a>
+  <a href="mew.deacon@gmail.com" id="contact"><img src="Email.jpg" width="64" height="64";></a></a>
 </div>
 
 <script>
+
 var myIndex = 0;
 carousel();
 
