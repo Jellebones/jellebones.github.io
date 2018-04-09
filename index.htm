@@ -6,6 +6,17 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 
+.w3-row-padding img 
+{
+    margin-bottom: 12px;
+    animation:animatezoom 0.6s
+}
+        @keyframes animatezoom
+        {
+        from{transform:scale(0.9)} 
+        to{transform:scale(1)}
+        }
+
 .banner {
     display: block;
     margin-left: auto;
@@ -38,12 +49,7 @@
     background-color: #FCB0BD;
 }
 
-.zoomIn {animation:animatezoom 0.6s}
-        @keyframes animatezoom{
-        from{transform:scale(0.9)} 
-        to{transform:scale(1)}
 }
-
 
 div.bottom {
     margin: auto;
@@ -77,19 +83,35 @@ box-sizing: border-box;
 
 <body>
 
-<center><a href="index.htm"><img class="banner" src="JellebonesTitle.png" alt="Jellebones"></a></center>
+<header class="w3-center w3-margin-bottom">
 
-<div class="w3-content w3-section" style="max-width:700px">
-  <img class="zoomIn" src="Luluco.jpg" style="width:100%">
-  <img class="zoomIn" src="FutabaPSP.jpg" style="width:100%">
-  <img class="zoomIn" src="Leopard Shark.jpg" style="width:100%">
-  <img class="zoomIn" src="Maritime Clique.jpg" style="width:100%">
-  <img class="zoomIn" src="Peachy.jpg" style="width:100%">
-  <img class="zoomIn" src="Neko.jpg" style="width:100%">
-  <img class="zoomIn" src="Smooth hound.jpg" style="width:100%">
-  <img class="zoomIn" src="Videl 711.jpg" style="width:100%">
-  <img class="zoomIn" src="Goblin.jpg" style="width:100%">
-  <img class="zoomIn" src="slimemaid.jpg" style="width:100%">
+<a href="index.htm"><img class="banner" src="JellebonesTitle.png" alt="Jellebones"></a>
+
+</header>
+
+<div class="w3-content" style="max-width:1500px">
+
+<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="Luluco.jpg" style="width:100%">
+    <img src="Maritime Clique.jpg" style="width:100%">
+    <img src="Smooth hound.jpg" style="width:100%">
+
+  </div>
+
+  <div class="w3-third">
+    <img src="FutabaPSP.jpg" style="width:100%">
+    <img src="Peachy.jpg" style="width:100%">
+    <img src="Videl 711.jpg" style="width:100%">
+
+  </div>
+
+  <div class="w3-third">
+    <img src="Leopard Shark.jpg" style="width:100%">
+    <img src="Neko.jpg" style="width:100%">
+    <img src="slimemaid.jpg" style="width:100%">
+
+  </div>
 </div>
 
 <div id="mySidenav" class="sidenav">
@@ -99,20 +121,6 @@ box-sizing: border-box;
 
 <script>
 
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("zoomIn");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2500); // Change image every 2 seconds
-}
 </script>
 
 

@@ -95,7 +95,11 @@ box-sizing: border-box;
 
 <body>
 
-<center><a href="index.htm"><img class="banner" src="JellebonesTitle.png" alt="Jellebones"></a></center>
+<header class="w3-center w3-margin-bottom">
+
+<a href="index.htm"><img class="banner" src="JellebonesTitle.png" alt="Jellebones"></a>
+
+</header>
 
 <div id="backboard">
     Hello. My name is Deacon Mew! I'm an artist that lives on the internet, known mostly by my online handle, Jellebones.<br>
@@ -112,20 +116,6 @@ box-sizing: border-box;
 
 <script>
 
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("zoomIn");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2500); // Change image every 2 seconds
-}
 </script>
 
 
