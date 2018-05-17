@@ -6,22 +6,29 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 
-.w3-row-padding img 
-{
-    margin-bottom: 12px;
-    animation:animatezoom 0.6s
-}
-        @keyframes animatezoom
-        {
-        from{transform:scale(0.9)} 
-        to{transform:scale(1)}
-        }
-
 .banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+}
+
+#backboard {
+    background: #98F078;
+    border-radius: 25px;
+    border: 8px solid #70C880;
+    position: relative;
+    top: 100px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    color: #5B2A1D;
+    height: 250px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box; 
 }
 
 #mySidenav a {
@@ -59,7 +66,12 @@
     background-color: #FCB0BD;
 }
 
+.zoomIn {animation:animatezoom 0.6s}
+        @keyframes animatezoom{
+        from{transform:scale(0.9)} 
+        to{transform:scale(1)}
 }
+
 
 div.bottom {
     margin: auto;
@@ -70,7 +82,7 @@ div.bottom {
 
 body{
 
-background: url("BlueChecker.jpg")repeat 0 0;
+background: url(GreenChecker.jpg) repeat 0 0;
 width: 100%;
 margin: 0;
 text-align: center;
@@ -88,7 +100,7 @@ box-sizing: border-box;
 
 </style>
 <meta charset="UTF-8">
-<title>Jellebones</title>
+<title>Jellecontact</title>
 </head>
 
 <body>
@@ -99,31 +111,10 @@ box-sizing: border-box;
 
 </header>
 
-<div class="w3-content" style="max-width:1500px">
+<div id="backboard">
 
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
-    <img src="Luluco.jpg" style="width:100%">
-    <img src="Maritime Clique.jpg" style="width:100%">
-    <img src="Smooth hound.jpg" style="width:100%">
-    <img src="Goblin.jpg" style="width:100%">
+<iframe src="https://itch.io/embed/252434" height="167" width="552" frameborder="0"></iframe>
 
-  </div>
-
-  <div class="w3-third">
-    <img src="FutabaPSP.jpg" style="width:100%">
-    <img src="Videl 711.jpg" style="width:100%">
-    <img src="Peachy.jpg" style="width:100%">
-    <img src="Sharkii.jpg" style="width:100%">
-
-  </div>
-
-  <div class="w3-third">
-    <img src="Leopard Shark.jpg" style="width:100%">
-    <img src="Neko.jpg" style="width:100%">
-    <img src="slimemaid.jpg" style="width:100%">
-
-  </div>
 </div>
 
 <div id="mySidenav" class="sidenav">
